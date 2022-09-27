@@ -109,7 +109,6 @@ main {
   flex-direction: column;
   width: 50%;
   margin: 4rem;
-  align-content: left;
 }
 
 .info img {
@@ -193,8 +192,6 @@ header .protection {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
-
-  word-break: break-word;
 }
 
 .card {
