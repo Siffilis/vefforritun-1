@@ -13,7 +13,9 @@ html {
 }
 
 /* og látum erfast á allt */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -34,29 +36,29 @@ html {
   /* Letur stillingar */
   --font-base-body-px: 16px;
   --font-base-size: 1rem;
-  --font-family-base: 'Nunito', Helvetica, Arial, sans-serif;
-  --font-family-heading: 'Domine', Georgia, serif;
+  --font-family-base: "Nunito", Helvetica, Arial, sans-serif;
+  --font-family-heading: "Domine", Georgia, serif;
 
   /* Grid stillingar */
   --columns: 12;
   --gutter: 30px;
-  --offset: 20px; 
+  --offset: 20px;
 }
 
 /* Leturgerðir */
 
 @font-face {
-  font-family: 'Domine';
+  font-family: "Domine";
   font-style: normal;
   font-display: swap;
-  src: url(./fonts/domine.ttf) format('woff');
+  src: url(./fonts/domine.ttf) format("woff");
 }
 
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-display: swap;
-  src: url(./fonts/nunito.ttf) format('woff');
+  src: url(./fonts/nunito.ttf) format("woff");
 }
 
 /* Almennt */
@@ -68,7 +70,9 @@ body {
   font-family: var(--font-family-base);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-family-heading);
 }
 
@@ -114,7 +118,6 @@ main {
   width: calc(100% - (2 * var(--offset)));
   max-width: var(--max-width);
 }
-
 
 .info-boxes {
   display: flex;
@@ -232,7 +235,7 @@ header .protection {
   height: 300px;
 }
 
-.card > .content {  
+.card > .content {
   flex: 1;
 
   display: flex;
@@ -258,7 +261,7 @@ footer {
 
 /* Grid hlutir og uppsetning */
 
-@media (min-width: 0px){
+@media (min-width: 0px) {
   .info {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -292,7 +295,7 @@ footer {
   .card {
     display: flex;
     flex-direction: column;
-  
+
     width: 100%;
     grid-column: span 12;
     margin-bottom: 0;
@@ -300,7 +303,7 @@ footer {
 }
 
 /* 600px (320px.png) */
-@media (min-width: 600px){
+@media (min-width: 600px) {
   .info {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -318,7 +321,7 @@ footer {
 
   .info-right .content {
     grid-column: 7 / span 6;
-    order: 2
+    order: 2;
   }
 
   .info-right .image {
@@ -335,7 +338,7 @@ footer {
   .card {
     display: flex;
     flex-direction: column;
-  
+
     width: 100%;
     grid-column: span 6;
     margin-bottom: 0;
@@ -343,7 +346,7 @@ footer {
 }
 
 /* 1400px (1600px.png) */
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
   .info {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -377,7 +380,7 @@ footer {
   .card {
     display: flex;
     flex-direction: column;
-  
+
     width: 100%;
     grid-column: span 6;
     margin-bottom: 0;
