@@ -43,7 +43,6 @@ html {
   --columns: 12;
   --gutter: 30px;
   --offset: 20px;
-  --gutter-small: 20px;
 }
 
 /* Leturgerðir */
@@ -129,7 +128,6 @@ main {
 /* Header */
 
 header {
-  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -141,7 +139,6 @@ header {
   background-position: 50% 50%;
   background-attachment: fixed;
   background-image: url(./myndir/header.jpg);
-  z-index: -2;
 }
 
 header .content {
@@ -174,10 +171,8 @@ header .protection {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
-  /*
-  max-height: 100vh;
-  */
+  z-index: 1;
+
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -271,7 +266,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    gap: var(--gutter-small);
+    gap: var(--gutter);
   }
 
   .info .content {
@@ -294,7 +289,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    gap: var(--gutter-small);
+    gap: var(--gutter);
   }
 
   .card {
@@ -318,7 +313,6 @@ footer {
 
   .info .content {
     grid-column: 1 / span 6;
-    margin: auto;
   }
 
   .info .image {
