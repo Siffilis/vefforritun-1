@@ -1,0 +1,115 @@
+.info-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 4);
+}
+
+/* Info blokk */
+
+.info {
+  display: flex;
+  gap: calc(var(--spacing) * 2);
+}
+
+.info .content p {
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.info .kicker {
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info .image img {
+  transform: rotateZ(2deg);
+}
+
+.info-right .image img {
+  transform: rotateZ(-2deg);
+}
+
+.info-right .content {
+  order: 2;
+}
+
+/* Grid hlutir og uppsetning */
+
+/* 0 - 599px */
+@media (min-width: 0) {
+  .info {
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .info .content {
+    grid-column: 1 / span 12;
+  }
+
+  .info .image {
+    grid-column: 1 / span 12;
+  }
+
+  .info-right .content {
+    order: 0;
+  }
+
+  .info-right .image {
+    grid-column: 1 / span 12;
+  }
+}
+
+/* 600 - 999 px  */
+@media (min-width: 600px) {
+  .info {
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .info .content {
+    grid-column: 1 / span 6;
+  }
+
+  .info .image {
+    grid-column: 7 / span 6;
+  }
+
+  .info-right .content {
+    grid-column: 7 / span 6;
+    order: 2;
+  }
+
+  .info-right .image {
+    grid-column: 1 / span 6;
+  }
+}
+
+/* 1000 - ... px */
+@media (min-width: 1000px) {
+  .info {
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .info .content {
+    grid-column: 2 / span 4;
+  }
+
+  .info .image {
+    grid-column: 7 / span 6;
+  }
+
+  .info-right .content {
+    grid-column: 8 / span 4;
+  }
+
+  .info-right .image {
+    grid-column: 1 / span 6;
+  }
+}
