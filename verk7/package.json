@@ -1,7 +1,7 @@
 {
-  "name": "vef1-2022-v7-synilausn",
+  "name": "vef1-2022-v7-sigfinnur",
   "version": "1.0.0",
-  "description": "[Sýnilausn á verkefni 7](https://github.com/vefforritun/vef1-2022-v7).",
+  "description": "Verkefni 7 í vefforritun 2022",
   "main": "scripts.js",
   "scripts": {
     "dev": "browser-sync start --server --files scripts.js index.html"
