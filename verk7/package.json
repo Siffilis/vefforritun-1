@@ -1,15 +1,19 @@
 {
-  "name": "vef1-2022-v7-sigfinnur",
+  "name": "verk7",
   "version": "1.0.0",
-  "description": "Verkefni 7 í vefforritun 2022",
+  "description": "Verkefni 7 í vefforritun 1 - Sigfinnur",
   "main": "scripts.js",
   "scripts": {
-    "dev": "browser-sync start --server --files scripts.js index.html"
+    "dev": "browser-sync start --server --files scripts.js index.html",
+    "copy:html": "cpy ./*.html ./build/",
+    "copy:js": "cpy ./*.js ./build/",
+    "build": "concurrently npm:copy:*"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.27.10"
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "concurrently": "^7.5.0",
+    "cpy-cli": "^4.2.0"
   }
 }
