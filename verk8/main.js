@@ -43,7 +43,7 @@ document.querySelector('#max_cups').innerText = MAX_NUM_OF_CUPS;
  */
 function waitingScreen(){
   setTimeout(() => {
-    showScreen(screen).wait();
+    showScreen('waiting');
   }, SHOW_WAITINGSCREEN_TIME);
 }
 
